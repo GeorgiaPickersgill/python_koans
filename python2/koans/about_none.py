@@ -41,7 +41,7 @@ class AboutNone(Koan):
 
             # What message was attached to the exception?
             # (HINT: replace __ with part of the error message.)
-            self.assertMatch(__, ex.args[0])
+            self.assertMatch("'NoneType' object has no attribute 'some_method_none_does_not_know_about'", ex.args[0])
 
     def test_none_is_distinct(self):
         """
